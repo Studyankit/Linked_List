@@ -1,9 +1,11 @@
 ﻿using System;
 using LinkedListDemo;
 
-LinkedList list = new LinkedList();
-list.Add(56);
-list.Add(30);
-list.Add(70);
+LinkedList linkedList = new LinkedList();
+linkedList.AddElementInReverse(70);
+linkedList.AddElementInReverse(30);
+linkedList.AddElementInReverse(56);
+linkedList.Display();
+
 
 
