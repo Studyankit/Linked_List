@@ -79,7 +79,7 @@ namespace LinkedListDemo
             }
             return head;
         }
-        
+
         public int PopFirstNode()
         {
             if (this.head == null)
@@ -104,6 +104,19 @@ namespace LinkedListDemo
                 newNode.next = null;
                 return newNode;
 
+            }
+        }
+        internal Node Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
         }
     }
 }
