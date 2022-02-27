@@ -88,6 +88,23 @@ namespace LinkedListDemo
             this.head = this.head.next;
             return pop;
         }
+        public Node PopLastNode()
+        {
+            if (this.head == null)
+                return null;
+            if (head.next == null)
+                return null;
+            else
+            {
+                Node newNode = head;
+                while (newNode.next.next != null)
+                {
+                    newNode = newNode.next;
+                }
+                newNode.next = null;
+                return newNode;
+
+        }
     }
 }
 
